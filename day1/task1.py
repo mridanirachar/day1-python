@@ -11,8 +11,15 @@ if perm == "yes":
 else:
     permanent = False
 
-bonus = salary * 10 / 100
-final_salary = salary + bonus
+if exp<3:
+    bonus=salary *5/100
+elif exp<5:
+    bonus=salary *10/100
+else:
+    bonus=salary *15/100
+
+final_salary=salary+bonus
+
 
 print("\nEmployee Details")
 print("Name =", name)

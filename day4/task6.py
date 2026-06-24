@@ -40,6 +40,17 @@ def transaction_summary(name, *transactions):
     for i in transactions:
         print(i)
 
+# function using **kwargs
+def account_details(**details):
+    print()
+    print("account details")
+
+    print("name =", details["name"])
+    print("deposit =", details["deposit"])
+    print("withdraw =", details["withdraw"])
+    print("balance =", details["balance"])
+
+
 # main program
 
 print("welcome to my bank")
@@ -71,4 +82,12 @@ transaction_summary(
     name,
     "deposit " + str(deposit_amount),
     msg
+)
+
+# account details using **kwargs
+account_details(
+    name=name,
+    deposit=deposit_amount,
+    withdraw=withdraw_amount,
+    balance=balance
 )

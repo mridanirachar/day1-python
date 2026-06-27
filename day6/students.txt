@@ -1,4 +1,0 @@
-name : m
-email : m@gmail.com
-skills : englush
-
